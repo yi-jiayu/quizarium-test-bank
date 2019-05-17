@@ -1,0 +1,17 @@
+{
+  "name": "quizarium-test-bank",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "debounce": "^1.2.0",
+    "fuse.js": "^3.4.4",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "parcel": "^1.12.3"
+  },
+  "alias": {
+    "vue": "./node_modules/vue/dist/vue.common.js"
+  }
+}

@@ -19,8 +19,8 @@
   <div class="form-group">
     <div class="form-group">
       <label for="query">Question</label>
-      <textarea class="form-control form-control-lg" id="query" placeholder="Search for a question"
-                v-model.trim="query" v-on:keyup.enter="blur" ref="queryInput">
+      <textarea class="form-control" id="query" placeholder="Search for a question"
+                v-model.trim="query" v-on:keyup.enter="blur" ref="queryInput"></textarea>
     </div>
     <div class="d-flex justify-content-end">
       <button class="btn btn-warning" v-on:click="reset">Reset</button>

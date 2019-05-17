@@ -32,5 +32,12 @@ new Vue({
     updateResults: function () {
       this.results = fuse.search(this.query).slice(0, 10);
     },
+    reset: function () {
+      this.query = '';
+      this.$refs.queryInput.focus();
+    },
+    blur: function (e) {
+      e.target.blur();
+    }
   },
 });

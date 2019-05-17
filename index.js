@@ -20,7 +20,6 @@ const fuse = new Fuse(questions, {
 new Vue({
   el: '#app',
   data: {
-    placeholder: randomQuestion,
     query: randomQuestion,
     results: fuse.search(randomQuestion).slice(0, 10),
   },

@@ -38,6 +38,9 @@ new Vue({
     },
     blur: function (e) {
       e.target.blur();
-    }
+    },
+    random: function () {
+      this.query = questions[Math.floor(Math.random() * questions.length)].q;
+    },
   },
 });

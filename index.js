@@ -30,9 +30,7 @@ new Vue({
   },
   methods: {
     updateResults: function () {
-      const t0 = new Date();
       this.results = fuse.search(this.query).slice(0, 10);
-      console.log(`Took ${new Date() - t0} ms`)
     },
   },
 });

@@ -1,4 +1,6 @@
 import Vue from 'vue';
 import App from './app.vue';
 
-new Vue(App).$mount('#app');
+new Vue({
+  render: createElement => createElement(App)
+}).$mount('#app');

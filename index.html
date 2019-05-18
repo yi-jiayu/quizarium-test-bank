@@ -26,26 +26,7 @@
     </ul>
   </div>
 </nav>
-<main id="app" class="container my-3">
-  <div class="form-group">
-    <div class="form-group">
-      <label for="query">Question</label>
-      <textarea class="form-control" id="query" placeholder="Search for a question"
-                v-model.trim="query" v-on:keyup.enter="blur" ref="queryInput"></textarea>
-    </div>
-    <div class="d-flex justify-content-end">
-      <button class="btn btn-warning" v-on:click="reset">Reset</button>
-      <button class="btn btn-secondary ml-1" v-on:click="random">Random</button>
-    </div>
-  </div>
-
-  <div class="list-group">
-    <div class="list-group-item" v-for="r in results">
-      <p class="mb-1">{{r.q}}</p>
-      <small>{{r.a}}</small>
-    </div>
-  </div>
-</main>
+<main id="app"></main>
 <script src="./index.js"></script>
 </body>
 </html>

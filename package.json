@@ -7,12 +7,12 @@
     "bootstrap": "^4.3.1",
     "debounce": "^1.2.0",
     "fuse.js": "^3.4.4",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-hot-reload-api": "^2.3.3"
   },
   "devDependencies": {
-    "parcel": "^1.12.3"
-  },
-  "alias": {
-    "vue": "./node_modules/vue/dist/vue.common.js"
+    "@vue/component-compiler-utils": "^3.0.0",
+    "parcel": "^1.12.3",
+    "vue-template-compiler": "^2.6.10"
   }
 }

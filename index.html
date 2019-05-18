@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-100">
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -15,12 +15,15 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 
+  <!-- Loading animation -->
+  <link rel="stylesheet" href="loading.css">
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
   <title>Quizarium Test Bank</title>
 </head>
-<body>
+<body class="d-flex flex-column h-100">
 <nav class="navbar navbar-light bg-light">
   <div class="container">
     <span class="navbar-brand">Quizarium Test Bank</span>
@@ -31,7 +34,12 @@
     </ul>
   </div>
 </nav>
-<main id="app"></main>
+<main id="app" class="d-flex justify-content-center align-items-center h-100">
+  <div class="lds-ripple">
+    <div></div>
+    <div></div>
+  </div>
+</main>
 <script src="./index.js"></script>
 </body>
 </html>
